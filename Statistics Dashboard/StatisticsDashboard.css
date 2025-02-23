@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    color: #004E64;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.dashboard-header p {
+    font-size: 18px;
+    color: #555;
+}
+
+.stats-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: #004E64;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card .value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffa500;
+    margin-bottom: 10px;
+}
+
+.card .change {
+    font-size: 14px;
+}
+
+.card .positive {
+    color: green;
+}
+
+.card .negative {
+    color: red;
+}
+
+.results-table {
+    margin-top: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+#filter-btn {
+    padding: 10px 20px;
+    background-color: #004E64;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#filter-btn:hover {
+    background-color: #007bff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #004E64;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.completed {
+    color: green;
+    font-weight: bold;
+}
+
+.not-completed {
+    color: red;
+    font-weight: bold;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics Dashboard | TEAMMATE</title>
+    <link rel="stylesheet" href="StatisticsDashboard.css">
+    <link rel="stylesheet" href="../Header/header.css">
+    <link rel="stylesheet" href="../Footer/Footer.css">
+    <link rel="icon" href="../Images/Logo for website.jpg" type="image/png">
+</head>
+<body>
+<div id="header"></div>
+<script src="../Header/header.js"></script>
+<main>
+    <section class="dashboard-header">
+        <h1>Welcome back, Gal</h1>
+        <p>Track and manage your performance</p>
+    </section>
+
+    <section class="stats-cards">
+        <div class="card">
+            <h2>Average Made-Shots</h2>
+            <p class="value">2,420</p>
+            <p class="change positive">▲ 40% vs last month</p>
+        </div>
+        <div class="card">
+            <h2>Average Missed-Shots</h2>
+            <p class="value">1,210</p>
+            <p class="change negative">▼ 10% vs last month</p>
+        </div>
+        <div class="card">
+            <h2>Summary of Games Played</h2>
+            <p class="value">316</p>
+            <p class="change positive">▲ 20% vs last month</p>
+        </div>
+    </section>
+
+    <section class="results-table">
+        <div class="filters">
+            <input type="text" id="search-bar" placeholder="Search by team or player">
+            <button id="filter-btn">Search</button>
+        </div>
+        <table>
+            <thead>
+            <tr>
+                <th>Game Name</th>
+                <th>Status</th>
+                <th>Players</th>
+                <th>Notes</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Friends from Herzliya</td>
+                <td class="completed">Completed</td>
+                <td><img src="../Images/player1.png" alt="Player 1"> +5 others</td>
+                <td>Content curating app</td>
+            </tr>
+            <tr>
+                <td>Hapoal Group</td>
+                <td class="not-completed">Not Completed</td>
+                <td><img src="../Images/player2.png" alt="Player 2"> +8 others</td>
+                <td>Design software</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<div id="footer"></div>
+<script src="../Footer/Footer.js"></script>
+<script src="StatisticsDashboard.js"></script>
+</body>
+</html>

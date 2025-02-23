@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #004E64;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filters select, .filters input, .filters button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.filters button {
+    background-color: #004E64;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.filters button:hover {
+    background-color: #007bff;
+}
+
+.teams-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-card h2 {
+    color: #ffa500;
+}
+
+.team-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.join-btn {
+    background-color: #004E64;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-btn:hover {
+    background-color: #007bff;
+}
+
+#create-new-game-btn {
+    background-color: #004E64;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+#create-new-game-btn:hover {
+    background-color: #007bff;
+    transform: scale(1.1);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+

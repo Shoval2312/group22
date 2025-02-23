@@ -1,0 +1,189 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.signup-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: max-content;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: visible;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+.title-container {
+    position: relative;
+    margin-bottom: 20px;
+    height: auto;
+    overflow: visible;
+    background-color: white;
+    padding-top: 40px;
+}
+
+.title-container h1 {
+    color: #004E64;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.signup-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+}
+
+.signup-form h1 {
+    margin-bottom: 20px;
+    color: #004E64;
+}
+
+.signup-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.signup-form form {
+    width: 80%;
+    max-width: 500px;
+}
+
+.signup-form input,
+.signup-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signup-form .create-account-btn {
+    background-color: #004E64;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.create-account-btn,
+.google-signup-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-form .google-signup-btn {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.signup-form .footer-text {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup-form .footer-text a {
+    color: #004E64;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-form .footer-text a:hover {
+    text-decoration: underline;
+}
+
+.signup-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.signup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.error-message {
+    margin-top: 5px;
+    font-size: 12px;
+    color: red;
+    display: block;
+}
+
+.signup-form img {
+    display: flex;
+    justify-content: center;
+}
+
+/* Animation */
+#animated-ball {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-image: url('../Images/football-icon.png');
+    background-size: cover;
+    animation: bounceBall 2s ease-in-out infinite;
+    z-index: 10;
+}
+
+
+@keyframes bounceBall {
+    0%, 100% {
+        transform: translate(-60%, 0);
+    }
+    50% {
+        transform: translate(-60%, -20px);
+    }
+}
+
+.signup-image img {
+    filter: contrast(110%) saturate(120%);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.signup-image img:hover {
+    transform: scale(1.05);
+    filter: contrast(120%) saturate(140%);
+}
+
+

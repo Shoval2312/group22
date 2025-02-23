@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams | TEAMMATE</title>
+    <link rel="stylesheet" href="TeamsPage.css">
+    <link rel="stylesheet" href="../Header/header.css">
+    <link rel="stylesheet" href="../Footer/Footer.css">
+    <link rel="icon" href="../Images/Logo for website.jpg" type="image/png">
+</head>
+<body>
+<div id="header"></div>
+<script src="../Header/header.js"></script>
+<main>
+    <h1>Find Your Team</h1>
+    <div class="filters">
+        <div class="tooltip">
+            <a href="../Create New Game/CreateNewGame.html">
+                <button id="create-new-game-btn">+</button>
+            </a>
+            <span class="tooltip-text">Create a New Game</span>
+        </div>
+        <select id="sport-filter">
+            <option value="">All Sports</option>
+            <option value="Soccer">Soccer</option>
+            <option value="Basketball">Basketball</option>
+            <option value="Volleyball">Volleyball</option>
+        </select>
+        <input type="text" id="location-filter" placeholder="Enter location...">
+        <select id="level-filter">
+            <option value="">All Levels</option>
+            <option value="Amateur">Amateur</option>
+            <option value="Professional">Professional</option>
+        </select>
+        <button id="filter-btn">Search</button>
+    </div>
+    <div class="teams-container">
+    </div>
+</main>
+
+<div id="footer"></div>
+<script src="../Footer/Footer.js"></script>
+<script src="TeamsPage.js"></script>
+</body>
+</html>

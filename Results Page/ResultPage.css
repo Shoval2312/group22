@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2 {
+    color: #004E64;
+}
+
+/* טבלת תוצאות */
+table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #004E64;
+    color: white;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: center;
+}
+
+.form-divider {
+    width: 3px;
+    background-color: #004E64;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ממקם את התוכן באמצע */
+    gap: 15px;
+    width: 45%;
+}
+
+.form-title {
+    color: orange;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.label-bold {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+}
+
+input, select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+    font-size: 14px;
+}
+
+
+.SubmitResults {
+    background-color: #004E64;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    padding: 14px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+.SubmitResults:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+
+.team-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.team-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}

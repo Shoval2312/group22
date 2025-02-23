@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="LogInPage.css">
+    <link rel="stylesheet" href="../Header/header.css">
+    <link rel="stylesheet" href="../Footer/Footer.css">
+    <link rel="icon" href="../Images/Logo for website.jpg" type="image/png">
+</head>
+<body>
+<div id="header"></div>
+<script src="../Header/header.js"></script>
+<script src="LogInPage.js"></script>
+<main>
+    <div class="login-container">
+        <div class="animation-container">
+            <div id="animated-ball"></div>
+        </div>
+        <h2 id="formTitle">Log in to your account</h2>
+        <p>Welcome back! Please enter your details.</p>
+        <form id="login-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <span class="error-message" id="email-error"></span>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <span class="error-message" id="password-error"></span>
+            <button type="submit" class="sign-in-btn">Sign in</button>
+        </form>
+        <p class="signup-link">Don’t have an account? <a href="../Sign Up Page/SignUpPage.html">Sign up</a></p>
+    </div>
+</main>
+<div id="footer"></div>
+<script src="../Footer/Footer.js"></script>
+</body>
+</html>

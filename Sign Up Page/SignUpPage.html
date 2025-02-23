@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="SignUpPage.css">
+    <link rel="stylesheet" href="../Header/header.css">
+    <link rel="stylesheet" href="../Footer/Footer.css">
+    <link rel="icon" href="../Images/Logo for website.jpg" type="image/png">
+</head>
+<body>
+<div id="header"></div>
+<script src="../Header/header.js"></script>
+<script src="SignUpPage.js"></script>
+<main>
+    <div class="signup-container">
+
+        <!-- Left Section -->
+        <div class="signup-form">
+            <div class="title-container">
+                <div id="animated-ball"></div>
+                <h1 id="formTitle">Sign up</h1> <br>
+            </div>
+            <form id="signup-form" action="#" method="POST">
+                <label for="name">Full Name*</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+                <small>Must be at least 8 characters.</small>
+
+                <label for="skill">Skill level*</label>
+                <select id="skill" name="skill" required>
+                    <option value="">Select skill level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+                <label for="position">Preferred position*</label>
+                <select id="position" name="position" required>
+                    <option value="">Select position</option>
+                    <option value="goalkeeper">Goalkeeper</option>
+                    <option value="defender">Defender</option>
+                    <option value="midfielder">Midfielder</option>
+                    <option value="forward">Forward</option>
+                </select>
+                <button type="submit" class="create-account-btn">Create account</button>
+                <button type="button" class="google-signup-btn" onclick="signUpWithGoogle()">Sign up with Google
+                </button>
+            </form>
+            <p class="footer-text">Already have an account? <a href="../Log in page/LogInPage.html">Log in</a></p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="signup-image">
+            <img src="../Images/FootballSignIn.jpg" alt="Football Background">
+        </div>
+    </div>
+</main>
+<div id="footer"></div>
+<script src="../Footer/Footer.js"></script>
+</body>
+</html>

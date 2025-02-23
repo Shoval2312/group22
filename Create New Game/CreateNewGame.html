@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Game</title>
+    <link rel="stylesheet" href="CreateNewGame.css">
+    <link rel="stylesheet" href="../Header/header.css">
+    <link rel="stylesheet" href="../Footer/Footer.css">
+    <link rel="icon" href="../Images/Logo for website.jpg" type="image/png">
+</head>
+<body>
+<div id="header"></div>
+<script src="../Header/header.js"></script>
+<div class="container">
+    <h1>Create a New Game</h1>
+    <p class="description">Build your dream team and hit the court</p>
+    <div class="image-container">
+        <img src="../Images/game_image.jpg" alt="Game Image" class="game-image">
+    </div>
+    <form action="#" id="gameForm">
+        <label for="gameName">Game Name:</label>
+        <input type="text" id="gameName" placeholder="Enter game name">
+        <label for="gameType">Game Type:</label>
+        <select id="gameType">
+            <option value="">Select Game Type</option>
+            <option value="basketball">Basketball</option>
+            <option value="soccer">Soccer</option>
+            <option value="tennis">Tennis</option>
+        </select>
+        <label for="dateTime">Select Date & Time:</label>
+        <input type="datetime-local" id="dateTime">
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter location">
+        <label for="skillLevel">Skill Level:</label>
+        <select id="skillLevel">
+            <option value="">Select Skill Level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+        <label for="players">Invite Players:</label>
+        <input type="text" id="players" placeholder="Search and select players">
+        <label for="notes">Additional Notes:</label>
+        <textarea id="notes" placeholder="Write any additional information"></textarea>
+        <button type="submit" class="buttonNewGame">Create Game</button>
+    </form>
+</div>
+<script src="CreateNewGame.js"></script>
+<div id="footer"></div>
+<script src="../Footer/Footer.js"></script>
+</body>
+</html>
